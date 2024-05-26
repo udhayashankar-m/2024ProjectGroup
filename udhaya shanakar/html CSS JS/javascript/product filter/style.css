@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html{
+    font-size:22px;
+}
+
+body{
+    background-color: #353b48;
+    padding:10px;
+}
+
+
+.control{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:4rem;
+}
+
+.btn-group .btn{
+    width:5rem;
+    height:1.5rem;
+    background-color: #00b894;
+    color:white;
+    border: 1px solid aqua;
+    font-size:0.7rem;
+    border-radius: 5px;
+    transform: 0.3s;
+    cursor: pointer;
+    position:relative;
+}
+
+.btn-group .btn:hover,.btn-group .active{
+    background-color: transparent;
+}
+
+#search{
+    width:6rem;
+    height:1.5rem;
+    padding:10px;
+    border: 2px solid #00b894;
+    border-radius: 20px;
+    outline: none;
+    background-color: #353b48;
+    color: #00b894;
+    transition: 0.5s;
+}
+
+#search::placeholder{
+    color:#00b894
+}
+
+#search:hover{
+    width:16rem;
+}
+#search:focus{
+    width:16rem;
+}
+
+.input-group{
+    position:relative;
+}
+
+.close{
+    color: white;
+    position:absolute;
+    right:0px;
+    width:1.3rem;
+    height:1.5rem;
+    font-size: 0.5rem;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #00b894;
+    border: none;
+    padding:3px;  
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container{
+    max-width:1200px;
+    margin:0px auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:1rem;
+}
+
+.box{
+    height:8rem;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.box img{
+    height:100%;
+    width:100%;
+    transition:all 0.3s;
+    transform-origin: top;
+    /* opacity: 0.8; */
+}
+
+.box img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    /* opacity: 1; */
+}
+
+.no-data-found{
+    color:white;
+    text-transform: capitalize;
+
+}
+
+#status{
+    color: white;
+    margin:15px;
+}
+
+@media (max-width:836px){
+
+    .control{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin:20px 0px;
+        height:7rem;
+    }
+
+    .btn-group{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:20px;
+        order:2;
+    }
+    .btn{
+        width:100% !important;
+    }
+
+    #search{
+        width:100%;
+        order:1;
+   }
+}
+
+
+
+
+
+/* new thing impleament in this project 
+    1.object-fit and object-position.
+    2.repeat(auto-fit,minmax(200,1fr)) instead of repeat(4,1fr).
+*/
+

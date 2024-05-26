@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product filter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1 id="status"></h1>
+    <div id="main-container">
+    <div class="control">
+        <div class="btn-group">
+            <button data-filter="all" class="btn active">All</button>
+            <button data-filter="pizza" class="btn">Pizza</button>
+            <button data-filter="burger" class="btn">Burger</button>
+            <button data-filter="ice cake" class="btn">ice cake</button>
+        </div>
+        <div class="input-group">
+        <input type="text" placeholder="search food" id="search"/>
+        <button class="close"><i class="fa-solid fa-x"></i></button>
+        </div>
+    </div>
+    <div class="container">
+        <!-- image container -->
+        <div class="box" data-item="pizza"><img src="./images/pizza 1.jpg" alt="pizza"></div>
+        <div class="box" data-item="burger"><img src="./images/burger 1.jpg" alt="burger"></div>
+        <div class="box" data-item="ice cake"><img src="./images/cake 1.jpg" alt="ice cake"></div>
+        <div class="box" data-item="pizza"><img src="./images/pizza 3.jpg" alt="pizza"></div>
+        <div class="box" data-item="burger"><img src="./images/burger 2.jpg" alt="burger"></div>
+        <div class="box" data-item="ice cake"><img src="./images/cake 2.jpg" alt="ice cake"></div>
+        <div class="box" data-item="pizza"><img src="./images/pizza 4.jpg" alt="pizza"></div>
+        <div class="box" data-item="burger"><img src="./images/burger 3.jpg" alt="burger"></div>
+        <div class="box" data-item="ice cake"><img src="./images/cake 3.jpg" alt="ice cake"></div>
+        <div class="box" data-item="pizza"><img src="./images/pizza 5.jpg" alt="pizza"></div>
+        <div class="box" data-item="burger"><img src="./images/burger 4.jpg" alt="burger"></div>
+        <div class="box" data-item="ice cake"><img src="./images/cake 4.jpg" alt="ice cake"></div>
+        <div class="box" data-item="pizza"><img src="./images/pizza 6.jpg" alt="pizza"></div>
+        <div class="box" data-item="burger"><img src="./images/burger 5.jpg" alt="burger"></div>
+        <div class="box" data-item="ice cake"><img src="./images/cake 5.jpg" alt="ice cake"></div>
+        <div class="box" data-item="pizza"><img src="./images/pizza 7.jpg" alt="pizza"></div>
+        <div class="box" data-item="burger"><img src="./images/burger 6.jpg" alt="burger"></div>
+        <div class="box" data-item="ice cake"><img src="./images/cake 6.jpg" alt="ice cake"></div>
+        <div class="box" data-item="pizza"><img src="./images/pizza 8.jpg" alt="pizza"></div>
+        <div class="box" data-item="burger"><img src="./images/burger 7.jpg" alt="burger"></div>
+        <div class="box" data-item="ice cake"><img src="./images/cake 7.jpg" alt="ice cake"></div>
+        <div class="box" data-item="pizza"><img src="./images/pizza 2.jpg" alt="pizza"></div>
+        <div class="box" data-item="burger"><img src="./images/burger 8.jpg" alt="burger"></div>
+        <div class="box" data-item="ice cake"><img src="./images/cake 8.jpg" alt="ice cake"></div>
+
+        <!-- no data found -->
+        <div class="no-data-found"></div>
+    </div>
+    </div>
+    <script src="internet-status.js"></script>
+</body>
+</html>
+
+
+<!-- new thing impleament in this project 
+    1.date attribute (date-filter="pizza").
+-->
