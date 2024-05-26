@@ -1,0 +1,9 @@
+app.post("/hello",(req,res)=>{
+res.send(`hello ${req.body.name}`)
+})
+
+app.get("/hello/:name/goodbye/:othername",(req,res)=>{
+console.log(req.params)
+const {name,othername} = req.params
+res.send(`hello ${name} & ${othername}!!`)   
+})
