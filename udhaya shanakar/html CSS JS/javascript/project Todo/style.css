@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background: rgb(36,0,9);
+background: linear-gradient(90deg, rgba(36,0,9,1) 0%, rgba(9,121,48,1) 0%, rgba(96,75,132,1) 0%, rgba(144,7,70,1) 100%, rgba(0,212,255,1) 100%);
+}
+.container{
+  width:800px;
+  padding:20px;
+  margin:0 auto;
+}
+
+.heading{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.input-container{
+  display: flex;
+  gap:30px;
+  margin-bottom: 30px;
+}
+
+.input{
+  width:400px;
+  border:5px solid purple;
+  border-radius: 10px;
+  outline: none;
+  padding:10px;
+}
+.input:focus{
+  border:5px solid darkorchid;
+  transition: 0.2s;
+}
+.input::placeholder{
+  color:rgb(0, 0, 139)
+}
+.date{
+  color:darkblue;
+  border:5px solid purple;
+  outline:none;
+  border-radius: 10px;
+  width:150px;
+  padding:10px;
+  cursor: pointer;
+}
+.date:focus{
+  border:5px solid darkorchid;
+  transition: 0.2s;
+}
+.btn{
+  width:100px;
+  font-size:20px;
+  font-weight: 500;
+  border:2px solid black;
+  background-color: purple;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Todolist-container{
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr;
+  gap:10px;
+}
+
+.btn-delete{
+  width:80px;
+  font-size:16px;
+  font-weight: 500;
+  border:2px solid black;
+  background-color: darkred;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-update{
+  width:80px;
+  font-size:16px;
+  font-weight: 500;
+  border:2px solid black;
+  background-color: darkgreen;
+  border-radius: 10px;
+  cursor: pointer;
+  padding:0px 5px;
+  height:100%;
+}
+.btn-update:hover{
+  background-color: rgba(18, 236, 18, 0.946);
+}
+
+.btn-delete:hover{
+  background-color:rgb(241, 30, 30);
+}
+.para,
+.js-date{
+  font-size:16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.updateParaInput{
+  width:400px;
+  border:5px solid purple;
+  border-radius: 10px;
+  outline: none;
+  padding:10px;
+}
+.updateParaInput:focus{
+  border:5px solid darkorchid;
+  transition: 0.2s;
+}
+.updateParaInput::placeholder{
+  color:rgb(0, 0, 139)
+}
+.updateDateInput{
+  color:darkblue;
+  border:5px solid purple;
+  border-radius: 10px;
+  width:150px;
+  padding:10px;
+  cursor: pointer;
+}
+.updateDateInput:focus{
+  outline:none;
+  border:5px solid darkorchid;
+  transition: 0.2s;
+}
