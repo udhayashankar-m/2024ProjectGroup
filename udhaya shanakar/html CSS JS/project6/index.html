@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="./form.py" id="form1">
+            <h1 class="header">Register</h1>
+            <div class="input-group">
+                <label for="username">Name</label>
+                <input type="text" name="username" id="username">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group eye-align">
+                <label for="newpwd">Password</label>
+                <input type="password" name="newpwd" id="newpwd">
+                <span class="eye"><i class="fa-solid fa-eye"></i></span>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="confirmpwd">Confirm password</label>
+                <input type="password" name="confirmpwd" id="confirmpwd">
+                <div class="error"></div>
+            </div>
+
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

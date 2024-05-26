@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@1,500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', sans-serif;  
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: azure;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.accordian{   
+    width:600px;
+    padding:10px;
+}
+
+.accordian-title{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: darkblue;
+    font-weight: bold;
+}
+
+.content-container{
+    border:1px solid black;
+    padding:10px;
+    position:relative;
+}
+
+.content-container .question{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom:1px solid black;
+    cursor: pointer;
+}
+
+.content-container .question:after{
+    content:"+";
+    color:red;
+    position:absolute;
+    right:20px;
+  
+}
+
+.content-container .answer{
+    height:0px;
+    padding:5px;
+    line-height:30px;    
+    text-align: justify;
+    overflow: hidden;
+}
+
+.accordian .content-container.active .answer{
+    height:100%;
+}
+
+.accordian .content-container.active .question{
+   font-size: 15px;
+}
+
+.accordian .content-container.active .question{
+    font-size: 15px;
+}
+
+.accordian .content-container.active .question::after{
+    content:"-"
+}
+
+
+
+
+
+
